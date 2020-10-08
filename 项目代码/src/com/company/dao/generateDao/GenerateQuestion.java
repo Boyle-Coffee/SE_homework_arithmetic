@@ -2,8 +2,6 @@ package com.company.dao.generateDao;
 
 import java.util.Random;
 
-import java.util.Random;
-
 /**
  * @program: 项目代码
  * @description: 生成题目
@@ -37,8 +35,18 @@ public class GenerateQuestion {
                 return "×";
             case 3:
                 return "÷";
-            default :
+            default:
                 return "";
         }
+    }
+
+    public String generateRandNumber() {
+        return null;
+    }
+
+    public String generateRandInt(Integer naturalNumber) {
+        Random random = new Random();
+        int randomInt = random.nextInt(naturalNumber);
+        return randomInt + "";
     }
 }
