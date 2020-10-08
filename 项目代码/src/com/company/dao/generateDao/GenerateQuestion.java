@@ -28,7 +28,7 @@ public class GenerateQuestion {
             String num = generateRandNumber(naturalNumber);
             question.append(num);
         }
-        return String.valueOf(question);
+        return addBrackets(String.valueOf(question));
     }
 
     private String generateRandSign() {
@@ -98,6 +98,60 @@ public class GenerateQuestion {
             int big = a > b ? a : b;
             int small = a < b ? a : b;
             return getGreatestCommonDivisor(big - small, small);
+        }
+    }
+
+    private String addBrackets(String question) {
+        int signNum = 0;
+        for (int i = 0; i < question.length(); i++) {
+            String str = question.substring(i, i + 1);
+            if (isSign(str)) {
+                signNum++;
+            }
+        }
+        if (signNum == 2) {
+            return addBracketsTwoSign(question);
+        } else if (signNum == 3) {
+            return addBracketsThreeSign(question);
+        }
+        return question;
+    }
+
+    private String addBracketsTwoSign(String question) {
+        Random random = new Random();
+        int bracketsFlag = random.nextInt(3);
+        switch (bracketsFlag) {
+            case 0:
+                return question;
+            case 1:
+                return "(" + question.substring(0, 3) + ")" + question.substring(3);
+            case 2:
+                return question.substring(0, 2) + "(" + question.substring(2) + ")";
+            default:
+                return "";
+        }
+    }
+
+    private String addBracketsThreeSign(String question) {
+        Random random = new Random();
+        int bracketsFlag = random.nextInt(7);
+        switch (bracketsFlag) {
+            case 0:
+                return question;
+            case 1:
+                return "(" + question.substring(0, 3) + ")" + question.substring(3);
+            case 2:
+                return question.substring(0, 2) + "(" + question.substring(2, 5) + ")" + question.substring(5);
+            case 3:
+                return question.substring(0, 3) + "(" + question.substring(3) + ")";
+            case 4:
+                return "(" + question.substring(0, 5) + ")" + question.substring(5);
+            case 5:
+                return question.substring(0, 2) + "(" + question.substring(2) + ")";
+            case 6:
+                return "(" + question.substring(0, 3) + ")" + question.substring(3, 4) + "(" + question.substring(4) + ")";
+            default:
+                return "";
         }
     }
 
