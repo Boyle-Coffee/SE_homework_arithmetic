@@ -17,10 +17,18 @@ public class GenerateQuestion {
      * @return 返回题目
      */
     public String generateQuestion(Integer naturalNumber) {
-        String exper = "";
+        StringBuilder question = new StringBuilder();
         Random random = new Random();
-        Integer signNum = random.nextInt(3) + 1;
-        return null;
+        int signNum = random.nextInt(3) + 1;
+        String number = generateRandNumber(naturalNumber);
+        question.append(number);
+        for (int i = 0; i < signNum; i++) {
+            String sign = generateRandSign();
+            question.append(sign);
+            String num = generateRandNumber(naturalNumber);
+            question.append(num);
+        }
+        return String.valueOf(question);
     }
 
     public String generateRandSign() {
