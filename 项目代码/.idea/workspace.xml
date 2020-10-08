@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405f2e3d-0246-4269-8e54-425917f3165f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/dao/generateDao/GenerateQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/dao/generateDao/GenerateQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dao/generateDao/GenerateQuestion.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,10 +90,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/dao/generateDao/GenerateQuestion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="644">
+              <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,9 +140,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="701" />
-    <option name="y" value="38" />
-    <option name="width" value="1315" />
+    <option name="x" value="823" />
+    <option name="y" value="30" />
+    <option name="width" value="1364" />
     <option name="height" value="1037" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -253,7 +253,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602144456467</updated>
-      <workItem from="1602144459376" duration="4484000" />
+      <workItem from="1602144459376" duration="6071000" />
     </task>
     <task id="LOCAL-00001" summary="重构：创建新的项目架构">
       <created>1602144529053</created>
@@ -276,11 +276,25 @@
       <option name="project" value="LOCAL" />
       <updated>1602145933062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="功能：完成随机符号的生成">
+      <created>1602148999065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602148999065</updated>
+    </task>
+    <task id="LOCAL-00005" summary="功能：完成随机整数的生成">
+      <created>1602150019092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602150019092</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4484000" />
+    <option name="totallyTimeSpent" value="6071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -325,7 +339,9 @@
     <MESSAGE value="重构：创建新的项目架构" />
     <MESSAGE value="重构：项目基本架构" />
     <MESSAGE value="功能：创建生成接口模块以及题目生成方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="功能：创建生成接口模块以及题目生成方法" />
+    <MESSAGE value="功能：完成随机符号的生成" />
+    <MESSAGE value="功能：完成随机整数的生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="功能：完成随机整数的生成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
@@ -398,10 +414,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/dao/generateDao/GenerateQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="644">
+          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -49,4 +49,28 @@ public class GenerateQuestion {
         int randomInt = random.nextInt(naturalNumber);
         return randomInt + "";
     }
+
+    public String generateRandFraction() {
+        Random random = new Random();
+        int numerator = random.nextInt();
+        int denominator = random.nextInt();
+        return null;
+    }
+
+    private int getGreatestCommonDivisor(int a, int b) {
+        if (a == b) {
+            return a;
+        }
+        if ((a & 1) == 0 && (b & 1) == 0) {
+            return getGreatestCommonDivisor(a >> 1, b >> 1) << 1;
+        } else if ((a & 1) == 0 && (b & 1) != 0) {
+            return getGreatestCommonDivisor(a >> 1, b);
+        } else if ((a & 1) != 0 && (b & 1) == 0) {
+            return getGreatestCommonDivisor(a, b >> 1);
+        } else {
+            int big = a > b ? a : b;
+            int small = a < b ? a : b;
+            return getGreatestCommonDivisor(big - small, small);
+        }
+    }
 }
