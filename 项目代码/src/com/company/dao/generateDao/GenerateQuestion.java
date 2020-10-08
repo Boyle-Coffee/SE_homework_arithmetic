@@ -40,17 +40,28 @@ public class GenerateQuestion {
         }
     }
 
-    public String generateRandNumber() {
-        return null;
+    public String generateRandNumber(Integer naturalNumber) {
+        Random random = new Random();
+        int numFlag = random.nextInt(3);
+        switch (numFlag) {
+            case 0:
+                return generateRandInt(naturalNumber);
+            case 1:
+                return generateRandInt(naturalNumber);
+            case 2:
+                return generateRandFraction();
+            default:
+                return "";
+        }
     }
 
-    public String generateRandInt(Integer naturalNumber) {
+    private String generateRandInt(Integer naturalNumber) {
         Random random = new Random();
         int randomInt = random.nextInt(naturalNumber);
         return randomInt + "";
     }
 
-    public String generateRandFraction() {
+    private String generateRandFraction() {
         Random random = new Random();
         int numerator = random.nextInt();
         int denominator = random.nextInt();
