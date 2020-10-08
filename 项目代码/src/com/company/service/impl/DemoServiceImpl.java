@@ -11,7 +11,7 @@ import com.company.service.DemoService;
  **/
 public class DemoServiceImpl implements DemoService {
 
-    Demo demo = new Demo();
+    private Demo demo = new Demo();
 
     @Override
     public void demo() {
