@@ -54,7 +54,15 @@ public class GenerateQuestion {
         Random random = new Random();
         int numerator = random.nextInt();
         int denominator = random.nextInt();
-        return null;
+        int gcd = getGreatestCommonDivisor(numerator, denominator);
+        numerator = numerator / gcd;
+        denominator = denominator / gcd;
+        if (numerator < denominator) {
+            return numerator + "" + "/" + denominator + "";
+        } else {
+            int num = numerator / denominator;
+            return num + "" + "'" + (numerator - denominator * num) + "" + "/" + denominator + "";
+        }
     }
 
     private int getGreatestCommonDivisor(int a, int b) {
