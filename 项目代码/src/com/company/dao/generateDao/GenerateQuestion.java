@@ -31,7 +31,7 @@ public class GenerateQuestion {
         return String.valueOf(question);
     }
 
-    public String generateRandSign() {
+    private String generateRandSign() {
         Random random = new Random();
         int signFlag = random.nextInt(4);
         switch (signFlag) {
@@ -48,7 +48,7 @@ public class GenerateQuestion {
         }
     }
 
-    public String generateRandNumber(Integer naturalNumber) {
+    private String generateRandNumber(Integer naturalNumber) {
         Random random = new Random();
         int numFlag = random.nextInt(3);
         switch (numFlag) {
@@ -98,6 +98,21 @@ public class GenerateQuestion {
             int big = a > b ? a : b;
             int small = a < b ? a : b;
             return getGreatestCommonDivisor(big - small, small);
+        }
+    }
+
+    private boolean isSign(String str) {
+        switch (str) {
+            case "+":
+                return true;
+            case "-":
+                return true;
+            case "×":
+                return true;
+            case "÷":
+                return true;
+            default:
+                return false;
         }
     }
 }
