@@ -2,6 +2,7 @@ package com.company.service.impl;
 
 import java.io.Writer;
 
+import com.company.dao.fileDao.ReadFromFile;
 import com.company.dao.fileDao.WriteToFile;
 import com.company.service.FileMdlService;
 
@@ -17,8 +18,15 @@ public class FileMdlServiceImpl implements FileMdlService {
 
     private WriteToFile writeToFile = new WriteToFile();
 
+    private ReadFromFile readFromFile = new ReadFromFile();
+
     @Override
     public void writeToFile(String fileName, List<String> textList) {
         writeToFile.writeToFile(fileName, textList);
+    }
+
+    @Override
+    public List<String> readFromFile(String fileName) {
+        return readFromFile.readFromFile(fileName);
     }
 }

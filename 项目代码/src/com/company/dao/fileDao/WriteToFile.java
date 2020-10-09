@@ -14,6 +14,12 @@ import java.util.List;
  **/
 public class WriteToFile {
 
+    /**
+     * 将题目文本或答案文本输出至文件
+     *
+     * @param fileName 文件名
+     * @param textList 文本集合
+     */
     public void writeToFile(String fileName, List<String> textList) {
         File file = new File(fileName);
         try {
@@ -27,6 +33,5 @@ public class WriteToFile {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -18,4 +18,11 @@ public interface FileMdlService {
      */
     public void writeToFile(String fileName, List<String> textList);
 
+
+    /**
+     * 将题目文件或答案文件读取为文本
+     * @param fileName 文件名
+     * @return 返回文本集合
+     */
+    public List<String> readFromFile(String fileName);
 }
