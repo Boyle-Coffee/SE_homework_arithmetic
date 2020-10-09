@@ -28,7 +28,8 @@ public class GenerateQuestion {
             String num = generateRandNumber(naturalNumberMax);
             question.append(num);
         }
-        return addBrackets(String.valueOf(question));
+        String str = checkMinus(String.valueOf(question));
+        return addBrackets(str);
     }
 
     private String generateRandSign() {
@@ -71,9 +72,9 @@ public class GenerateQuestion {
 
     private String generateRandFraction() {
         Random random = new Random();
-        // 暂定分子分母的最大值
+        // 暂定分子分母的最大值——可通过参数方式改变
         int numerator = random.nextInt(50);
-        int denominator = random.nextInt(50);
+        int denominator = random.nextInt(50) + 2;
         int gcd = getGreatestCommonDivisor(numerator, denominator);
         numerator = numerator / gcd;
         denominator = denominator / gcd;
@@ -153,37 +154,17 @@ public class GenerateQuestion {
         }
     }
 
-    private boolean isSign(String str) {
-        switch (str) {
-            case "+":
-                return true;
-            case "-":
-                return true;
-            case "×":
-                return true;
-            case "÷":
-                return true;
-            default:
-                return false;
-        }
-    }
-
     private List<String> saveQuestion(String question) {
         int j = 0;
         List<String> list = new ArrayList<>();
-        List<Integer> signList = new ArrayList<>();
-        for (int i = 0; i < question.length(); i++) {
-            if (isSign(question.substring(i, i + 1))) {
-                signList.add(i);
-            }
-        }
+        List<Integer> signList = saveSignNum(question);
         list.add(changeFraction(question.substring(j, signList.get(0))));
         for (int i = 0; i < signList.size(); i++) {
             list.add(question.substring(signList.get(i), signList.get(i) + 1));
             j = signList.get(i) + 1;
             if (i + 1 < signList.size()) {
                 list.add(changeFraction(question.substring(j, signList.get(i + 1))));
-            }else {
+            } else {
                 list.add(changeFraction(question.substring(j)));
             }
         }
@@ -196,6 +177,16 @@ public class GenerateQuestion {
             question.append(list);
         }
         return String.valueOf(question);
+    }
+
+    private List<Integer> saveSignNum(String question) {
+        List<Integer> signList = new ArrayList<>();
+        for (int i = 0; i < question.length(); i++) {
+            if (isSign(question.substring(i, i + 1))) {
+                signList.add(i);
+            }
+        }
+        return signList;
     }
 
     private String changeFraction(String question) {
@@ -215,5 +206,69 @@ public class GenerateQuestion {
             return num + "" + "'" + (numerator - denominator * num) + "" + "/" + denominator + "";
         }
         return question;
+    }
+
+    private String checkMinus(String question) {
+        boolean isError = false;
+        String str = question;
+        List<Integer> signList = saveSignNum(question);
+        for (int i = 0; i < signList.size(); i++) {
+            if ("-".equals(question.substring(signList.get(i), signList.get(i) + 1))) {
+                if (i == 0) {
+                    isError = judgeMinus(question.substring(0, signList.get(i)), question.substring(signList.get(i) + 1, signList.get(i + 1)));
+                } else if (i == signList.size() - 1) {
+                    isError = judgeMinus(question.substring((signList.get(i - 1) + 1), signList.get(i)), question.substring(signList.get(i) + 1));
+                } else {
+                    isError = judgeMinus(question.substring((signList.get(i - 1) + 1), signList.get(i)), question.substring(signList.get(i) + 1, signList.get(i + 1)));
+                }
+                if (isError) {
+                    str = str.substring(0, i) + "+" + str.substring(i + 1);
+                }
+            }
+        }
+        return str;
+    }
+
+    private boolean judgeMinus(String before, String after) {
+        float beforeNum = changeStrToNum(before);
+        float afterNum = changeStrToNum(after);
+        return beforeNum > afterNum;
+    }
+
+    private float changeStrToNum(String str) {
+        float num = 0;
+        int semicolonNum = getSemicolonNum(str);
+        if (semicolonNum == 0) {
+            num = Integer.valueOf(str);
+        } else {
+            int numerator = Integer.valueOf(str.substring(0, semicolonNum));
+            int denominator = Integer.valueOf(str.substring(semicolonNum + 1));
+            num = numerator / (denominator);
+        }
+        return num;
+    }
+
+    private boolean isSign(String str) {
+        switch (str) {
+            case "+":
+                return true;
+            case "-":
+                return true;
+            case "×":
+                return true;
+            case "÷":
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    private int getSemicolonNum(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            if ("/".equals(str.substring(i, i + 1))) {
+                return i;
+            }
+        }
+        return 0;
     }
 }

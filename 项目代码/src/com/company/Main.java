@@ -22,10 +22,10 @@ public class Main {
 //        System.out.println("(" + question.substring(0, 5) + ")" + question.substring(5));
 //        System.out.println(question.substring(0, 2) + "(" + question.substring(2) + ")");
 //        System.out.println("(" + question.substring(0, 3) + ")" + question.substring(3, 4) + "(" + question.substring(4) + ")");
-        GenerateQuestion gq = new GenerateQuestion();
-        for (int i = 0; i < 10; i++) {
-            String question = gq.generateQuestion(100);
-            System.out.println(question);
-        }
+//        GenerateQuestion gq = new GenerateQuestion();
+//        for (int i = 0; i < 10; i++) {
+//            String question = gq.generateQuestion(100);
+//            System.out.println(question);
+//        }
     }
 }
