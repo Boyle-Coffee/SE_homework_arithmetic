@@ -1,4 +1,4 @@
-package com.company.dao.generateDao;
+package com.company.model.generateModel;
 
 import com.company.util.generateUtil.QuestionUtil;
 

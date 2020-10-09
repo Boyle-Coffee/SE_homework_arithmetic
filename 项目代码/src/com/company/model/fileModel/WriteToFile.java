@@ -1,4 +1,4 @@
-package com.company.dao.fileDao;
+package com.company.model.fileModel;
 
 import java.io.File;
 

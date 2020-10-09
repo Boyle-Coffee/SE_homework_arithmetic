@@ -1,6 +1,6 @@
 package com.company.service.impl;
 
-import com.company.dao.generateDao.GenerateQuestion;
+import com.company.model.generateModel.GenerateQuestion;
 import com.company.service.GenerateMdlService;
 
 /**

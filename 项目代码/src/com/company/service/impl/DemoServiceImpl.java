@@ -1,6 +1,6 @@
 package com.company.service.impl;
 
-import com.company.dao.Demo;
+import com.company.model.Demo;
 import com.company.service.DemoService;
 
 /**

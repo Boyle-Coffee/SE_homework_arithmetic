@@ -1,4 +1,4 @@
-package com.company.dao;
+package com.company.model;
 
 /**
  * @program: 项目代码

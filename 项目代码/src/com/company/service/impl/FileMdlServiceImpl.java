@@ -2,8 +2,8 @@ package com.company.service.impl;
 
 import java.io.Writer;
 
-import com.company.dao.fileDao.ReadFromFile;
-import com.company.dao.fileDao.WriteToFile;
+import com.company.model.fileModel.ReadFromFile;
+import com.company.model.fileModel.WriteToFile;
 import com.company.service.FileMdlService;
 
 import java.util.List;

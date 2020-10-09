@@ -1,7 +1,7 @@
 package com.company.test;
 
 import com.company.Main;
-import com.company.dao.generateDao.GenerateQuestion;
+import com.company.model.generateModel.GenerateQuestion;
 
 /**
  * @program: 项目代码
