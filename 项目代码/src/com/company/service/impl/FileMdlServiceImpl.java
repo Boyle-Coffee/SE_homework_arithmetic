@@ -1,9 +1,7 @@
 package com.company.service.impl;
 
-import java.io.Writer;
-
-import com.company.model.fileModel.ReadFromFile;
-import com.company.model.fileModel.WriteToFile;
+import com.company.model.filemodel.ReadFromFile;
+import com.company.model.filemodel.WriteToFile;
 import com.company.service.FileMdlService;
 
 import java.util.List;

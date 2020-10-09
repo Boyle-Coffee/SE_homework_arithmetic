@@ -1,8 +1,6 @@
 package com.company;
 
-import com.company.model.generateModel.GenerateQuestion;
-
-import java.util.List;
+import com.company.model.generatemodel.GenerateQuestion;
 
 public class Main {
 

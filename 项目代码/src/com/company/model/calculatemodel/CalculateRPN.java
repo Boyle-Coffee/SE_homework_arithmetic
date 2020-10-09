@@ -1,4 +1,4 @@
-package com.company.model.calculateModel;
+package com.company.model.calculatemodel;
 
 import com.company.common.Constants;
 import com.company.util.calculateUtil.DigitStringUtil;

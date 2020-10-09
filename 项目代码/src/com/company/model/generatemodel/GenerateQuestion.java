@@ -1,4 +1,4 @@
-package com.company.model.generateModel;
+package com.company.model.generatemodel;
 
 import com.company.util.generateUtil.QuestionUtil;
 

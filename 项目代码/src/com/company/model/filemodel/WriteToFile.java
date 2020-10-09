@@ -1,4 +1,4 @@
-package com.company.model.fileModel;
+package com.company.model.filemodel;
 
 import java.io.File;
 

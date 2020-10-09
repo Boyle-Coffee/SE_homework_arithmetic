@@ -1,4 +1,4 @@
-package com.company.model.checkModel;
+package com.company.model.checkmodel;
 
 import java.util.Set;
 

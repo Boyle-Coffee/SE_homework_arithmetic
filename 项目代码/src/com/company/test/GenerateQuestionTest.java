@@ -1,8 +1,5 @@
 package com.company.test;
 
-import com.company.Main;
-import com.company.model.generateModel.GenerateQuestion;
-
 /**
  * @program: 项目代码
  * @description: 题目生成测试

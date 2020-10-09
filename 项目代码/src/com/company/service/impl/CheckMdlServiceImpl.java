@@ -1,6 +1,6 @@
 package com.company.service.impl;
 
-import com.company.model.checkModel.CheckReversePoland;
+import com.company.model.checkmodel.CheckReversePoland;
 import com.company.service.CheckMdlService;
 
 import java.util.Set;

@@ -1,7 +1,7 @@
 package com.company.service.impl;
 
 import com.company.service.CalculateMdlService;
-import com.company.model.calculateModel.CalculateRPN;
+import com.company.model.calculatemodel.CalculateRPN;
 /**
  * @program: 项目代码
  * @description: 计算模块具体实现
