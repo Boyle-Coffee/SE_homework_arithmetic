@@ -9,7 +9,7 @@ import com.company.service.impl.CalculateMdlServiceImpl;
  * @author: Boyle
  * @create: 2020-10-09 20:32
  **/
-public class CalculateRPNText {
+public class CalculateRPNTest {
     private static CalculateMdlService test = new CalculateMdlServiceImpl();
 
     public static void main(String[] args) {
