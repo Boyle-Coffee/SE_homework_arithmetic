@@ -24,7 +24,7 @@ public class WriteToFileTest {
         testMethod();
     }
 
-    public static void testMethod() {
+    private static void testMethod() {
         List<String> textList = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
