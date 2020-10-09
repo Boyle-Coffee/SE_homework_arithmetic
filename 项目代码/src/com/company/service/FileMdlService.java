@@ -1,5 +1,7 @@
 package com.company.service;
 
+import java.util.List;
+
 /**
  * @program: 项目代码
  * @description: 文件模块接口
@@ -7,4 +9,13 @@ package com.company.service;
  * @create: 2020-10-09 14:47
  **/
 public interface FileMdlService {
+
+    /**
+     * 将题目文本或答案文本输出至文件中
+     *
+     * @param fileName 文件名
+     * @param textList 文本集合
+     */
+    public void writeToFile(String fileName, List<String> textList);
+
 }
