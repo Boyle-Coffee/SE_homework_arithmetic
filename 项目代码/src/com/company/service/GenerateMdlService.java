@@ -6,7 +6,7 @@ package com.company.service;
  * @author: Mr.Huang
  * @create: 2020-10-08 16:30
  **/
-public interface GenerateMdl {
+public interface GenerateMdlService {
 
     /**
      * 生成题目

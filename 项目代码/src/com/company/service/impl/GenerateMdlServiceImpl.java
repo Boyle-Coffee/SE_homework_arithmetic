@@ -1,6 +1,6 @@
 package com.company.service.impl;
 
-import com.company.service.GenerateMdl;
+import com.company.service.GenerateMdlService;
 
 /**
  * @program: 项目代码
@@ -8,7 +8,7 @@ import com.company.service.GenerateMdl;
  * @author: Mr.Huang
  * @create: 2020-10-08 16:31
  **/
-public class GenerateMdlImpl implements GenerateMdl {
+public class GenerateMdlServiceImpl implements GenerateMdlService {
 
     @Override
     public String generateQuestion(Integer naturalNumber) {
