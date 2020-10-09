@@ -1,32 +1,27 @@
 package com.company;
 
-import com.company.model.generatemodel.GenerateQuestion;
+import java.util.*;
+
+import com.company.controller.GenerateFourOperations;
+import com.company.controller.JudgeArray;
 
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-//        String question = "x+y+z+u";
-//        GenerateQuestion gq = new GenerateQuestion();
-//        List<String> list = gq.saveQuestion(question);
-//        System.out.println(list);
-//        System.out.println(list.subList(0, 3));
-//        System.out.println(list.subList(3, list.size()));
-//        System.out.println("(" + question.substring(0, 3) + ")" + question.substring(3));
-//        System.out.println(question.substring(0, 2) + "(" + question.substring(2) + ")");
-//        System.out.println("(" + question.substring(0, 3) + ")" + question.substring(3));
-//        System.out.println(question.substring(0, 2) + "(" + question.substring(2, 5) + ")" + question.substring(5));
-//        System.out.println(question.substring(0, 3) + "(" + question.substring(3) + ")");
-//        System.out.println("(" + question.substring(0, 5) + ")" + question.substring(5));
-//        System.out.println(question.substring(0, 2) + "(" + question.substring(2) + ")");
-//        System.out.println("(" + question.substring(0, 3) + ")" + question.substring(3, 4) + "(" + question.substring(4) + ")");
-        GenerateQuestion gq = new GenerateQuestion();
-//        gq.checkMinus("8-41/30÷18");
-//        gq.checkMinus("8-41÷18");
-        for (int i = 0; i < 10; i++) {
-            String question = gq.generateQuestion(100);
-            System.out.println("加括号：" + question);
-        }
+    private static GenerateFourOperations generateFourOperations = new GenerateFourOperations();
+    private static JudgeArray judgeArray = new JudgeArray();
+    private static List<String> questionList = new ArrayList<>();
+    private static List<String> answerList = new ArrayList<>();
+    private static Set<String> reversePolandSet = new LinkedHashSet<>();
 
+    public static void main(String[] args) {
+        int questionNum = 100;
+        int naturalNumberMax = 100;
+        if (judgeArray.judgeArrayIsFile(args, naturalNumberMax, questionNum)) {
+            // todo 需求九
+            System.out.println("需求九");
+        } else {
+            generateFourOperations.generateFourOperations(questionNum, naturalNumberMax,
+                    questionList, answerList, reversePolandSet);
+        }
     }
 }

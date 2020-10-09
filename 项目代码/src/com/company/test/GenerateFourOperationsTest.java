@@ -12,12 +12,12 @@ import java.util.List;
  * @create: 2020-10-09 21:52
  **/
 public class GenerateFourOperationsTest {
-    static List<String> list = new ArrayList<>();
-
-    private static GenerateFourOperations gfo = new GenerateFourOperations();
-
-    public static void main(String[] args) {
-        gfo.generateFourOperations(list);
-        System.out.println(list);
-    }
+//    static List<String> list = new ArrayList<>();
+//
+//    private static GenerateFourOperations gfo = new GenerateFourOperations();
+//
+//    public static void main(String[] args) {
+//        gfo.generateFourOperations(list);
+//        System.out.println(list);
+//    }
 }

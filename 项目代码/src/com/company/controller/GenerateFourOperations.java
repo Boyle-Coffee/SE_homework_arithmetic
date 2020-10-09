@@ -22,13 +22,17 @@ public class GenerateFourOperations {
     private CalculateMdlService calculateMdlService = new CalculateMdlServiceImpl();
     private CheckMdlService checkMdlService = new CheckMdlServiceImpl();
 
+    private String question = null;
+    private String reversePoland = null;
+    private String answer = null;
+
     public void generateFourOperations(Integer questionNum, Integer naturalNumberMax,
                                        List<String> questionList, List<String> answerList, Set<String> reversePolandSet) {
-        String question = null;
-        String reversePoland = null;
-        String answer = null;
         for (int i = 0; i < questionNum; i++) {
-            generateQuesAndAnswerAndReverse(question, reversePoland, answer, naturalNumberMax);
+            generateQuesAndAnswerAndReverse(naturalNumberMax);
+            while ("<0".equals(answer) && "÷0".equals(answer)) {
+                generateQuesAndAnswerAndReverse(naturalNumberMax);
+            }
             boolean flag = checkMdlService.isErrorReversePoland(reversePoland, reversePolandSet);
             if (flag) {
                 questionList.add(question);
@@ -37,7 +41,7 @@ public class GenerateFourOperations {
         }
     }
 
-    private void generateQuesAndAnswerAndReverse(String question, String reversePoland, String answer, Integer naturalNumberMax) {
+    private void generateQuesAndAnswerAndReverse(Integer naturalNumberMax) {
         question = generateMdlService.generateQuestion(naturalNumberMax);
         reversePoland = calculateMdlService.generateReversePoland(question);
         answer = calculateMdlService.generateAnswer(reversePoland);
