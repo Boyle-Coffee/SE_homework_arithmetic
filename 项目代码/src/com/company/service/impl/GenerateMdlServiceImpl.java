@@ -1,5 +1,6 @@
 package com.company.service.impl;
 
+import com.company.dao.generateDao.GenerateQuestion;
 import com.company.service.GenerateMdlService;
 
 /**
@@ -10,8 +11,10 @@ import com.company.service.GenerateMdlService;
  **/
 public class GenerateMdlServiceImpl implements GenerateMdlService {
 
+    private GenerateQuestion generateQuestion = new GenerateQuestion();
+
     @Override
     public String generateQuestion(Integer naturalNumber) {
-        return null;
+        return generateQuestion.generateQuestion(naturalNumber);
     }
 }
