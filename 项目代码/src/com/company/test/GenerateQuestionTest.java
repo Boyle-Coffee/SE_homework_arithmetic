@@ -11,8 +11,8 @@ import com.company.dao.generateDao.GenerateQuestion;
  **/
 public class GenerateQuestionTest {
     public static void main(String[] args) {
-        String str = "6/7";
-        System.out.println(Float.valueOf(str));
+//        String str = "6/7";
+//        System.out.println(Float.valueOf(str));
 //        GenerateQuestion gq = new GenerateQuestion();
 //        String str = "57/41";
 //        gq.changeFraction()

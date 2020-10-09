@@ -102,7 +102,7 @@ public class QuestionUtil {
     public boolean judgeMinus(String before, String after) {
         float beforeNum = changeStrToNum(before);
         float afterNum = changeStrToNum(after);
-        return beforeNum > afterNum;
+        return beforeNum < afterNum;
     }
 
     /**
@@ -242,7 +242,9 @@ public class QuestionUtil {
         } else {
             int numerator = Integer.valueOf(str.substring(0, semicolonNum));
             int denominator = Integer.valueOf(str.substring(semicolonNum + 1));
-            num = numerator / (denominator);
+            System.out.println(numerator / denominator);
+            System.out.println(numerator % denominator);
+            num = (float) numerator / denominator;
         }
         return num;
     }

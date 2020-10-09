@@ -32,6 +32,7 @@ public class GenerateQuestion {
             String num = generateRandNumber(naturalNumberMax);
             question.append(num);
         }
+        System.out.println("原题目：" + question);
         String str = checkMinus(String.valueOf(question));
         return addBrackets(str);
     }
@@ -106,13 +107,15 @@ public class GenerateQuestion {
      * @param question 题目
      * @return 返回更改后的题目
      */
-    private String checkMinus(String question) {
+    public String checkMinus(String question) {
         boolean isError = false;
         String str = question;
         List<Integer> signList = questionUtil.saveSignNum(question);
         for (int i = 0; i < signList.size(); i++) {
             if ("-".equals(question.substring(signList.get(i), signList.get(i) + 1))) {
-                if (i == 0) {
+                if (i == 0 && signList.size() == 1) {
+                    isError = questionUtil.judgeMinus(question.substring(0, signList.get(i)), question.substring(signList.get(i) + 1));
+                } else if (i == 0) {
                     isError = questionUtil.judgeMinus(question.substring(0, signList.get(i)), question.substring(signList.get(i) + 1, signList.get(i + 1)));
                 } else if (i == signList.size() - 1) {
                     isError = questionUtil.judgeMinus(question.substring((signList.get(i - 1) + 1), signList.get(i)), question.substring(signList.get(i) + 1));
@@ -120,10 +123,11 @@ public class GenerateQuestion {
                     isError = questionUtil.judgeMinus(question.substring((signList.get(i - 1) + 1), signList.get(i)), question.substring(signList.get(i) + 1, signList.get(i + 1)));
                 }
                 if (isError) {
-                    str = str.substring(0, i) + "+" + str.substring(i + 1);
+                    str = str.substring(0, signList.get(i)) + "+" + str.substring(signList.get(i) + 1);
                 }
             }
         }
+        System.out.println(str);
         return str;
     }
 }
