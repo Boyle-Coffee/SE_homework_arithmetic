@@ -82,7 +82,7 @@ public class QuestionUtil {
             case 2:
                 return outputQuestion(list.subList(0, 2)) + "(" + outputQuestion(list.subList(2, 5)) + ")" + outputQuestion(list.subList(5, list.size()));
             case 3:
-                return outputQuestion(list.subList(0, 3)) + "(" + outputQuestion(list.subList(3, list.size())) + ")";
+                return outputQuestion(list.subList(0, 4)) + "(" + outputQuestion(list.subList(4, list.size())) + ")";
             case 4:
                 return "(" + outputQuestion(list.subList(0, 5)) + ")" + outputQuestion(list.subList(5, list.size()));
             case 5:
