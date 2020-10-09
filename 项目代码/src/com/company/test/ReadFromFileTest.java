@@ -20,7 +20,7 @@ public class ReadFromFileTest {
         testMethod("F://testFile.txt");
     }
 
-    public static void testMethod(String fileName) {
+    private static void testMethod(String fileName) {
         List<String> textList = new ArrayList<>();
 
         textList = fileMdlService.readFromFile(fileName);
