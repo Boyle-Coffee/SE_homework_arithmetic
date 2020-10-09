@@ -34,9 +34,11 @@ public class QuestionUtil {
         // 暂定分子分母的最大值——可通过参数方式改变
         int numerator = random.nextInt(50);
         int denominator = random.nextInt(50) + 2;
-        int gcd = getGreatestCommonDivisor(numerator, denominator);
-        numerator = numerator / gcd;
-        denominator = denominator / gcd;
+        if (numerator > 0) {
+            int gcd = getGreatestCommonDivisor(numerator, denominator);
+            numerator = numerator / gcd;
+            denominator = denominator / gcd;
+        }
         return numerator + "" + "/" + denominator + "";
     }
 
@@ -242,8 +244,6 @@ public class QuestionUtil {
         } else {
             int numerator = Integer.valueOf(str.substring(0, semicolonNum));
             int denominator = Integer.valueOf(str.substring(semicolonNum + 1));
-            System.out.println(numerator / denominator);
-            System.out.println(numerator % denominator);
             num = (float) numerator / denominator;
         }
         return num;

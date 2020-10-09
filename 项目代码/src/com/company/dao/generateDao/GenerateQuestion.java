@@ -107,7 +107,7 @@ public class GenerateQuestion {
      * @param question 题目
      * @return 返回更改后的题目
      */
-    public String checkMinus(String question) {
+    private String checkMinus(String question) {
         boolean isError = false;
         String str = question;
         List<Integer> signList = questionUtil.saveSignNum(question);
@@ -127,7 +127,6 @@ public class GenerateQuestion {
                 }
             }
         }
-        System.out.println(str);
         return str;
     }
 }
