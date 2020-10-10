@@ -42,8 +42,8 @@ public class GenerateFourOperations {
                 answerList.add(answer);
             }
         }
-        fileMdlService.writeToFile("Exercises", questionList);
-        fileMdlService.writeToFile("Answers", answerList);
+        fileMdlService.writeToFile("Exercises.txt", questionList);
+        fileMdlService.writeToFile("Answers.txt", answerList);
     }
 
     private void generateQuesAndAnswerAndReverse(Integer naturalNumberMax) {
