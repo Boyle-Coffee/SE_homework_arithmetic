@@ -2,9 +2,11 @@ package com.company.controller;
 
 import com.company.service.CalculateMdlService;
 import com.company.service.CheckMdlService;
+import com.company.service.FileMdlService;
 import com.company.service.GenerateMdlService;
 import com.company.service.impl.CalculateMdlServiceImpl;
 import com.company.service.impl.CheckMdlServiceImpl;
+import com.company.service.impl.FileMdlServiceImpl;
 import com.company.service.impl.GenerateMdlServiceImpl;
 
 import java.util.List;
@@ -21,6 +23,7 @@ public class GenerateFourOperations {
     private GenerateMdlService generateMdlService = new GenerateMdlServiceImpl();
     private CalculateMdlService calculateMdlService = new CalculateMdlServiceImpl();
     private CheckMdlService checkMdlService = new CheckMdlServiceImpl();
+    private FileMdlService fileMdlService = new FileMdlServiceImpl();
 
     private String question = null;
     private String reversePoland = null;
@@ -30,7 +33,7 @@ public class GenerateFourOperations {
                                        List<String> questionList, List<String> answerList, Set<String> reversePolandSet) {
         for (int i = 0; i < questionNum; i++) {
             generateQuesAndAnswerAndReverse(naturalNumberMax);
-            while ("<0".equals(answer) && "÷0".equals(answer)) {
+            while ("<0".equals(answer) || "÷0".equals(answer)) {
                 generateQuesAndAnswerAndReverse(naturalNumberMax);
             }
             boolean flag = checkMdlService.isErrorReversePoland(reversePoland, reversePolandSet);
@@ -39,6 +42,8 @@ public class GenerateFourOperations {
                 answerList.add(answer);
             }
         }
+        fileMdlService.writeToFile("Exercises", questionList);
+        fileMdlService.writeToFile("Answers", answerList);
     }
 
     private void generateQuesAndAnswerAndReverse(Integer naturalNumberMax) {

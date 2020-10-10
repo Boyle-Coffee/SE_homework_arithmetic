@@ -32,10 +32,8 @@ public class GenerateQuestion {
             String num = generateRandNumber(naturalNumberMax);
             question.append(num);
         }
-        System.out.println("原题目：" + question);
         String str = checkMinus(String.valueOf(question));
         str = addBrackets(str);
-        System.out.println("加括号：" + str);
         str = addSpace(str);
         return str;
     }

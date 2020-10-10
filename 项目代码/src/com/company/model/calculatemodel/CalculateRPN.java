@@ -10,12 +10,12 @@ public class CalculateRPN {
 
     private String stack2RPN(Stack<String> resultStack) {
         /**
-        *@Description: 进行加法、乘法交换，确保等价的算式后缀表达式相同
-        *@Param: [resultStack]
-        *@return: java.lang.String
-        *@Author: Boyle
-        *@date: 2020/10/9
-        */
+         *@Description: 进行加法、乘法交换，确保等价的算式后缀表达式相同
+         *@Param: [resultStack]
+         *@return: java.lang.String
+         *@Author: Boyle
+         *@date: 2020/10/9
+         */
         Stack<String> tempStack = new Stack<>();
         String childExper1, childExper2, tempExper;
 
@@ -40,15 +40,15 @@ public class CalculateRPN {
         }
         return null;
     }
-    
+
     public String generateReversePoland(String question) {
         /**
-        *@Description: 逆波兰式生成，将中缀表达式转换为后缀表达式
-        *@Param: [question]
-        *@return: java.lang.String
-        *@Author: Boyle
-        *@date: 2020/10/8
-        */
+         *@Description: 逆波兰式生成，将中缀表达式转换为后缀表达式
+         *@Param: [question]
+         *@return: java.lang.String
+         *@Author: Boyle
+         *@date: 2020/10/8
+         */
         if (question==null || "".equals(question.trim())) {
             return null;
         }

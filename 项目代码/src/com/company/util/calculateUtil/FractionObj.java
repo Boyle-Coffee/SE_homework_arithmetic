@@ -140,8 +140,8 @@ public class FractionObj {
         if (this.getString() == Constants.INF || r.getString() == Constants.INF) {
             return new FractionObj(1,0);
         }
-        int a = r.getNumerator();
-        int b = r.getDenominator();
+        int a = r.getDenominator();
+        int b = r.getNumerator();
         int newNumerator = numerator * b + denominator * a;
         int newDenominator = denominator * b;
         FractionObj result = new FractionObj(newNumerator, newDenominator);
