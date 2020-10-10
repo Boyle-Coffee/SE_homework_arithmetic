@@ -1,5 +1,7 @@
 package com.company.test;
 
+import com.company.model.generatemodel.GenerateQuestion;
+
 /**
  * @program: 项目代码
  * @description: 题目生成测试
@@ -8,10 +10,10 @@ package com.company.test;
  **/
 public class GenerateQuestionTest {
     public static void main(String[] args) {
-//        String str = "6/7";
-//        System.out.println(Float.valueOf(str));
-//        GenerateQuestion gq = new GenerateQuestion();
-//        String str = "57/41";
-//        gq.changeFraction()
+        GenerateQuestion gq = new GenerateQuestion();
+        for (int i = 0; i < 10; i++) {
+            String s = gq.generateQuestion(100);
+            System.out.println(s);
+        }
     }
 }

@@ -174,7 +174,7 @@ public class QuestionUtil {
      * @param question 题目
      * @return 返回存有题目的List
      */
-    private List<String> saveQuestion(String question) {
+    public List<String> saveQuestion(String question) {
         int j = 0;
         List<String> list = new ArrayList<>();
         List<Integer> signList = saveSignNum(question);
@@ -197,7 +197,7 @@ public class QuestionUtil {
      * @param questionList 存有题目的List
      * @return 返回List中的题目内容
      */
-    private String outputQuestion(List<String> questionList) {
+    public String outputQuestion(List<String> questionList) {
         StringBuilder question = new StringBuilder();
         for (String list : questionList) {
             question.append(list);
@@ -209,7 +209,7 @@ public class QuestionUtil {
      * 改变分数的表达形式
      *
      * @param question 题目
-     * @return 返回改变后的题目
+     * @return 返回改变后的题目片段
      */
     private String changeFraction(String question) {
         int j = 0;
