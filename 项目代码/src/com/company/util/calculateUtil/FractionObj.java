@@ -70,6 +70,9 @@ public class FractionObj {
         } else if (b==1) {
             numerator = a;
             denominator = b;
+        } else if (b==0){
+            numerator = a;
+            denominator = 0;
         } else {
             int c = getGreatestCommonDivisor(Math.abs(a), Math.abs(b));
             numerator = a / c;
@@ -88,6 +91,13 @@ public class FractionObj {
         return false;
     }
 
+    public boolean DenominatorZero() {
+        if (denominator == 0) {
+            return true;
+        }
+        return false;
+    }
+
     public int getDenominator() {
         return denominator;
     }
@@ -98,23 +108,38 @@ public class FractionObj {
 
     public String getString() {
         String a, b, c;
-        int temp;
+        int temp, denominator, numerator;
+        String sign;
+        if (this.LTzero()) {
+            denominator = Math.abs(this.denominator);
+            numerator = Math.abs(this.numerator);
+            sign = "-";
+        } else {
+            denominator = this.denominator;
+            numerator = this.numerator;
+            sign = "";
+        }
         if (denominator == 1) {
-            return DigitStringUtil.integerToStr(numerator);
+            return sign + DigitStringUtil.integerToStr(numerator);
+        } else if(denominator == 0) {
+            return Constants.INF;
         } else if (denominator < numerator) {
             temp = numerator / denominator;
             c = DigitStringUtil.integerToStr(temp);
             a = DigitStringUtil.integerToStr(numerator - temp * denominator);
             b = DigitStringUtil.integerToStr(denominator);
-            return c + "'" + a+"/"+b;
+            return sign + c + "'" + a + "/"+b;
         } else {
             a = DigitStringUtil.integerToStr(numerator);
             b = DigitStringUtil.integerToStr(denominator);
-            return a+"/"+b;
+            return sign + a + "/"+b;
         }
     }
 
     public FractionObj add(FractionObj r) {  // 加法运算
+        if (this.getString() == Constants.INF || r.getString() == Constants.INF) {
+            return new FractionObj(1,0);
+        }
         int a = r.getDenominator();
         int b = r.getNumerator();
         int newNumerator = numerator * b + denominator * a;
@@ -124,6 +149,9 @@ public class FractionObj {
     }
 
     public FractionObj sub(FractionObj r) {  // 减法运算
+        if (this.getString() == Constants.INF || r.getString() == Constants.INF) {
+            return new FractionObj(1,0);
+        }
         int a = r.getNumerator();
         int b = r.getDenominator();
         int newNumerator = numerator * b - denominator * a;
@@ -133,6 +161,9 @@ public class FractionObj {
     }
 
     public FractionObj multi(FractionObj r) {
+        if (this.getString() == Constants.INF || r.getString() == Constants.INF) {
+            return new FractionObj(1,0);
+        }
         int a = r.getNumerator();
         int b = r.getDenominator();
         int newNumerator = numerator * a;
@@ -142,6 +173,9 @@ public class FractionObj {
     }
 
     public FractionObj div(FractionObj r) {
+        if (this.getString() == Constants.INF || r.getString() == Constants.INF) {
+            return new FractionObj(1,0);
+        }
         int a = r.getNumerator();
         int b = r.getDenominator();
         int newNumerator = numerator * b;

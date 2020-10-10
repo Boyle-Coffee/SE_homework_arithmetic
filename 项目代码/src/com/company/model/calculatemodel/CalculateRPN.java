@@ -106,23 +106,37 @@ public class CalculateRPN {
             switch (opt) {
                 case Constants.ADD:
                     result = new FractionObj(fig1).add(new FractionObj(fig2));
-                    resultStr = result.getString();
+                    if (result.DenominatorZero()) {
+                        resultStr = Constants.DIVZERO;
+                    } else {
+                        resultStr = result.getString();
+                    }
                     break;
                 case Constants.MINUS:
                     result = new FractionObj(fig1).sub(new FractionObj(fig2));
-                    if (result.LTzero()) {
-                        resultStr = "<0";
+                    if (result.DenominatorZero()) {
+                        resultStr = Constants.DIVZERO;
+                    } else if (result.LTzero()) {
+                        resultStr = Constants.NEGATIVE;
                     } else {
                         resultStr = result.getString();
                     }
                     break;
                 case Constants.TIMES:
                     result = new FractionObj(fig1).multi(new FractionObj(fig2));
-                    resultStr = result.getString();
+                    if (result.DenominatorZero()) {
+                        resultStr = Constants.DIVZERO;
+                    } else {
+                        resultStr = result.getString();
+                    }
                     break;
                 case Constants.DIVISION:
                     result = new FractionObj(fig1).div(new FractionObj(fig2));
-                    resultStr = result.getString();
+                    if (result.DenominatorZero()) {
+                        resultStr = Constants.DIVZERO;
+                    } else {
+                        resultStr = result.getString();
+                    }
                     break;
                 default:
                     resultStr = null;
@@ -153,8 +167,13 @@ public class CalculateRPN {
                 fig1 = tempStack.pop();
                 fig2 = tempStack.pop();
                 temp = operation(fig1, fig2, experStack.pop());
-                if (temp.equals("<0")) {
-                    return "<0";
+                if (temp==null) {
+                    return null;
+                }
+                if (temp.equals(Constants.NEGATIVE)) {
+                    return Constants.NEGATIVE;
+                } else if (temp.equals(Constants.DIVZERO)) {
+                    return Constants.DIVZERO;
                 }
                 tempStack.push(temp);
             } else {

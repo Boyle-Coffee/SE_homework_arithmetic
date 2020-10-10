@@ -3,14 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="405f2e3d-0246-4269-8e54-425917f3165f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/项目代码.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/项目代码.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/common/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/common/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/model/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/model/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/model/calculateModel/CalculateRPN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/model/calculateModel/CalculateRPN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/model/fileModel/ReadFromFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/model/fileModel/ReadFromFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/model/fileModel/WriteToFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/model/fileModel/WriteToFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/model/generateModel/GenerateQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/model/generateModel/GenerateQuestion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/CalculateMdlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/CalculateMdlService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/CheckMdlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/CheckMdlService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/DemoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/DemoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/FileMdlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/FileMdlService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/GenerateMdlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/GenerateMdlService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/CalculateMdlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/CalculateMdlServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/CheckMdlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/CheckMdlServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/DemoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/DemoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/FileMdlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/FileMdlServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/GenerateMdlServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/service/impl/GenerateMdlServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/test/GenerateQuestionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/test/GenerateQuestionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/test/ReadFromFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/test/ReadFromFileTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/test/WriteToFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/test/WriteToFileTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/util/calculateUtil/DigitStringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/util/calculateUtil/DigitStringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/util/calculateUtil/FractionObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/util/calculateUtil/FractionObj.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/项目代码/com/company/util/generateUtil/QuestionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/项目代码/com/company/util/generateUtil/QuestionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/filemodel/ReadFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/filemodel/ReadFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/calculatemodel/CalculateRPN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/calculatemodel/CalculateRPN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/util/calculateUtil/DigitStringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/util/calculateUtil/DigitStringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/util/calculateUtil/FractionObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/util/calculateUtil/FractionObj.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,112 +39,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/model/generatemodel/GenerateQuestion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4325">
-              <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/model/filemodel/WriteToFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/test/GenerateQuestionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/util/generateUtil/QuestionUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2618">
-              <caret line="139" column="21" lean-forward="true" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/controller/JudgeArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/controller/GenerateFourOperations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/model/filemodel/ReadFromFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/test/ReadFromFileTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/test/GenerateFourOperationsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,130 +58,27 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/company/model/generateModel/GenerateQuestion.java" />
-        <option value="$PROJECT_DIR$/src/com/company/test/CalculateRPNTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/test/GenerateFourOperationsTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/controller/GenerateFourOperations.java" />
-        <option value="$PROJECT_DIR$/src/com/company/controller/JudgeArray.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/util/generateUtil/QuestionUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/company/test/GenerateQuestionTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/generatemodel/GenerateQuestion.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/filemodel/ReadFromFile.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-325" />
-    <option name="y" value="95" />
-    <option name="width" value="1930" />
-    <option name="height" value="1048" />
-  </component>
   <component name="ProjectId" id="1idViGxdy6XVU5J8AuUwo5mcago" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="filemodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="generatemodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="calculateUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="项目代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="项目代码" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="generateUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/company/model/calculateModel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
@@ -277,19 +89,7 @@
       <recent name="E:\other\学习2\软件工程\结对项目\代码\SE_homework_arithmetic\项目代码\src\com\company\model\calculateModel" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.ReadFromFileTest">
+  <component name="RunManager" selected="Application.CalculateRPNTest">
     <configuration name="CalculateRPN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.model.calculatemodel.CalculateRPN" />
       <module name="项目代码" />
@@ -357,9 +157,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculateRPNTest" />
         <item itemvalue="Application.ReadFromFileTest" />
         <item itemvalue="Application.GenerateQuestionTest" />
-        <item itemvalue="Application.CalculateRPNTest" />
         <item itemvalue="Application.GenerateFourOperationsTest" />
         <item itemvalue="Application.CalculateRPN" />
       </list>
@@ -383,6 +183,8 @@
       <workItem from="1602250233740" duration="3512000" />
       <workItem from="1602254058340" duration="3723000" />
       <workItem from="1602290702176" duration="8270000" />
+      <workItem from="1602322382473" duration="275000" />
+      <workItem from="1602322741646" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="重构：创建新的项目架构">
       <created>1602144529053</created>
@@ -555,48 +357,6 @@
     <option name="localTasksCounter" value="25" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15805000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2627346" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32719547" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="JProfiler" order="13" />
-      <window_info anchor="bottom" id="MyBatis Log" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="aiXcoder" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="RestServices" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -629,6 +389,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="修复：空格的生成的错位bug" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Project_Structure" timestamp="1602322561252">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1602322561252" />
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602322457662">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1602322457662" />
     <state x="523" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602244611187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -637,223 +405,53 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602245799697" />
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1602247101987">
+    <state x="432" y="122" key="FileChooserDialogImpl" timestamp="1602322594236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602247101987" />
-    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1602247101987">
+    <state x="432" y="122" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602322594236" />
+    <state width="1493" height="190" key="GridCell.Tab.0.bottom" timestamp="1602323563801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602247101987" />
-    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1602247101986">
+    <state width="1493" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602323563801" />
+    <state width="1493" height="190" key="GridCell.Tab.0.center" timestamp="1602323563801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602247101986" />
-    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1602247101987">
+    <state width="1493" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602323563801" />
+    <state width="1493" height="190" key="GridCell.Tab.0.left" timestamp="1602323563801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602247101987" />
-    <state x="272" y="57" key="SettingsEditor" timestamp="1602245165833">
+    <state width="1493" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602323563801" />
+    <state width="1493" height="190" key="GridCell.Tab.0.right" timestamp="1602323563801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602245165833" />
+    <state width="1493" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602323563801" />
+    <state width="1493" height="135" key="GridCell.Tab.1.bottom" timestamp="1602322657494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="135" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602322657494" />
+    <state width="1493" height="135" key="GridCell.Tab.1.center" timestamp="1602322657494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="135" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602322657494" />
+    <state width="1493" height="135" key="GridCell.Tab.1.left" timestamp="1602322657494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="135" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602322657494" />
+    <state width="1493" height="135" key="GridCell.Tab.1.right" timestamp="1602322657494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="135" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602322657494" />
+    <state x="272" y="0" key="SettingsEditor" timestamp="1602322595737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="272" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602322595737" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1602322770102">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1602322770102" />
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602237830213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602237830213" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/GenerateMdlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/FileMdlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/DemoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/Demo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/项目代码/com/company/common/Constants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/impl/GenerateMdlServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/calculatemodel/CalculateRPN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/CheckMdlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/impl/CalculateMdlServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/CalculateMdlService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/service/impl/CheckMdlServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/checkmodel/CheckReversePoland.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
-          <folding>
-            <element signature="e#324#325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/test/CalculateRPNTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/test/GenerateFourOperationsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/controller/GenerateFourOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/controller/JudgeArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/util/calculateUtil/FractionObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/util/generateUtil/QuestionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2618">
-          <caret line="139" column="21" lean-forward="true" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/test/GenerateQuestionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/filemodel/WriteToFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/generatemodel/GenerateQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4325">
-          <caret line="176" column="9" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/filemodel/ReadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/test/ReadFromFileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

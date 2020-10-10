@@ -33,4 +33,19 @@ public class Constants {
      * int 的 最大值(代表括号的等级)
      */
     public static final int LEVEL_HIGH = Integer.MAX_VALUE;
+
+    /**
+     * 减法运算出现负数
+     */
+    public static final String NEGATIVE = "<0";
+
+    /**
+     * 除法的除数为0或分数的分母为0
+     */
+    public static final String DIVZERO = "÷0";
+
+    /**
+     * 表示无限的字符串
+     */
+    public static final String INF = "Inf";
 }

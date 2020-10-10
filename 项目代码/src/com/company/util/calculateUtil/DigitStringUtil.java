@@ -26,7 +26,7 @@ public class DigitStringUtil {
                 result = Constants.LEVEL_2;
                 break;
             default:
-                result = 0;
+                result = Constants.LEVEL_HIGH;
         }
         return result;
     }
