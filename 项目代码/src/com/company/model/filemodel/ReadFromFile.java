@@ -12,7 +12,6 @@ import java.util.List;
  * @create: 2020-10-09 15:12
  **/
 public class ReadFromFile {
-// todo 去除序号
     /**
      * 读取题目文件或答案文件中的内容
      *
@@ -29,6 +28,11 @@ public class ReadFromFile {
             InputStreamReader reader = new InputStreamReader(fis, StandardCharsets.UTF_8);
             BufferedReader bufr = new BufferedReader(reader);
             while ((strLine = bufr.readLine()) != null) {
+                for (int i = 0; i < strLine.length(); i++) {
+                    if (".".equals(strLine.substring(i, i + 1))) {
+                        strLine = strLine.substring(i+1);
+                    }
+                }
                 textList.add(strLine);
             }
             reader.close();
