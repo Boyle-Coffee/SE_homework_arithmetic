@@ -12,7 +12,7 @@ import java.util.List;
  * @create: 2020-10-09 15:12
  **/
 public class ReadFromFile {
-
+// todo 去除序号
     /**
      * 读取题目文件或答案文件中的内容
      *

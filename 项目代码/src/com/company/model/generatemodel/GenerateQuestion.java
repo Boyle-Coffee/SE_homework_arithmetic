@@ -11,7 +11,7 @@ import java.util.*;
  * @create: 2020-10-08 16:35
  **/
 public class GenerateQuestion {
-
+    
     private QuestionUtil questionUtil = new QuestionUtil();
 
     /**
@@ -34,7 +34,9 @@ public class GenerateQuestion {
         }
         System.out.println("原题目：" + question);
         String str = checkMinus(String.valueOf(question));
-        return addBrackets(str);
+        str = addBrackets(str);
+        str = addSpace(str);
+        return str;
     }
 
     /**
@@ -128,5 +130,38 @@ public class GenerateQuestion {
             }
         }
         return str;
+    }
+
+    public String addSpace(String question) {
+        for (int i = 0; i < question.length(); i++) {
+            if (questionUtil.isSign(question.substring(i, i + 1))) {
+                question = question.substring(i - 1, i) +
+                        " " + question.substring(i, i + 1) + " "
+                        + question.substring(i + 1);
+            }
+        }
+        for (int i = 0; i < question.length(); i++) {
+            if ("(".equals(question.substring(i, i + 1))) {
+                if (i == 0 || " ".equals(question.substring(i - 1, i))) {
+                    question = question.substring(i, i + 1) + " " + question.substring(i + 1);
+                } else {
+                    question = question.substring(i - 1, i) +
+                            " " + question.substring(i, i + 1) + " "
+                            + question.substring(i + 1);
+                }
+            }
+        }
+        for (int i = 0; i < question.length(); i++) {
+            if (")".equals(question.substring(i, i + 1))) {
+                if (i == question.length() - 1 || " ".equals(question.substring(i + 1, i + 2))) {
+                    question = question.substring(i - 1, i) + " " + question.substring(i);
+                } else {
+                    question = question.substring(i - 1, i) +
+                            " " + question.substring(i, i + 1) + " "
+                            + question.substring(i + 1);
+                }
+            }
+        }
+        return question;
     }
 }
