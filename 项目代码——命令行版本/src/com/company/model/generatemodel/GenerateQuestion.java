@@ -32,7 +32,7 @@ public class GenerateQuestion {
             String num = generateRandNumber(naturalNumberMax);
             question.append(num);
         }
-        String str = checkMinus(String.valueOf(question));
+        String str = String.valueOf(question);
         str = addBrackets(str);
         str = addSpace(str);
         return str;

@@ -32,19 +32,27 @@ public class QuestionUtil {
     public String generateRandFraction(Integer naturalNumberMax) {
         Random random = new Random();
         int numerator = random.nextInt(naturalNumberMax);
-        int denominator = random.nextInt(naturalNumberMax);
-        if (denominator == 0) {
-            denominator += 2;
-        }
-        if (numerator == 0) {
-            return numerator + "";
-        }
+        int denominator = random.nextInt(naturalNumberMax-1) + 1;
         if (numerator > 0) {
             int gcd = getGreatestCommonDivisor(numerator, denominator);
             numerator = numerator / gcd;
             denominator = denominator / gcd;
         }
-        return numerator + "" + "/" + denominator + "";
+        if (denominator == 1 || numerator == 0) {
+            return numerator + "";
+        }
+        if (numerator < denominator) {
+            return numerator + "" + "/" + denominator + "";
+        } else if (numerator == denominator){
+            return "1";
+        } else {
+            int intPart = random.nextInt(naturalNumberMax);
+            numerator = numerator%denominator;
+            if (random.nextInt(3)<1) {
+                return numerator + "" + "/" + denominator + "";
+            }
+            return intPart + "" + "'" + "" + numerator + "" + "/" + denominator + "";
+        }
     }
 
     /**
@@ -183,14 +191,14 @@ public class QuestionUtil {
         int j = 0;
         List<String> list = new ArrayList<>();
         List<Integer> signList = saveSignNum(question);
-        list.add(changeFraction(question.substring(j, signList.get(0))));
+        list.add(question.substring(j, signList.get(0)));
         for (int i = 0; i < signList.size(); i++) {
             list.add(question.substring(signList.get(i), signList.get(i) + 1));
             j = signList.get(i) + 1;
             if (i + 1 < signList.size()) {
-                list.add(changeFraction(question.substring(j, signList.get(i + 1))));
+                list.add(question.substring(j, signList.get(i + 1)));
             } else {
-                list.add(changeFraction(question.substring(j)));
+                list.add(question.substring(j));
             }
         }
         return list;
