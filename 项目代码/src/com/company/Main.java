@@ -18,27 +18,27 @@ public class Main {
         String questionFileName = null;
         String answerFileName = null;
         boolean fileFlag = false;
-        boolean flag = false;
+        boolean flag = true;
         if (args.length == 0) {
-            flag = true;
+            flag = false;
         }
         for (int i = 0; i < args.length; i++) {
             if ("-r".equals(args[i])) {
                 naturalNumberMax = Integer.valueOf(args[i + 1]);
-                flag = true;
+                flag = false;
             }
             if ("-n".equals(args[i])) {
                 questionNum = Integer.valueOf(args[i + 1]);
-                flag = true;
+                flag = false;
             }
             if ("-e".equals(args[i])) {
                 questionFileName = args[i + 1];
-                flag = true;
+                flag = false;
                 fileFlag = true;
             }
             if ("-a".equals(args[i])) {
                 answerFileName = args[i + 1];
-                flag = true;
+                flag = false;
                 fileFlag = true;
             }
         }
