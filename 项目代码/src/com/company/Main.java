@@ -4,7 +4,6 @@ import java.util.*;
 
 import com.company.controller.GenerateFourOperations;
 import com.company.controller.JudgeArray;
-import com.company.execption.ArrayExecption;
 
 public class Main {
 
