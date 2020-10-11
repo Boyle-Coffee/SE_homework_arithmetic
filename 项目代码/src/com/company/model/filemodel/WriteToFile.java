@@ -23,7 +23,7 @@ public class WriteToFile {
     public void writeToFile(String fileName, List<String> textList) {
         File file = new File(fileName);
         try {
-            FileWriter fileWriter = new FileWriter(file, true);
+            FileWriter fileWriter = new FileWriter(file, false);
             for (int i = 0; i < textList.size(); i++) {
                 fileWriter.write(i + 1 + ".");
                 fileWriter.write(textList.get(i));
