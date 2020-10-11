@@ -45,13 +45,17 @@ public class Main {
         }
         if (fileFlag) {
             if (checkFourOperarions.checkFourOperarionsAnswer(exerciseFileName, answerFileName)) {
-                System.out.println("检查成功");
+                System.out.println("检查成功，已输出结果到Grade.txt");
             } else {
-                System.out.println("检查出错");
+                System.out.println("检查出错，这可能是读取的文件异常或不存在导致，请检查你的参数");
             }
         } else {
-            generateFourOperations.generateFourOperations(questionNum, naturalNumberMax,
-                    questionList, answerList, reversePolandSet);
+            if (generateFourOperations.generateFourOperations(questionNum, naturalNumberMax,
+                    questionList, answerList, reversePolandSet)) {
+                System.out.println("生成成功，结果已经输出到Exercises.txt和Answers.txt");
+            } else {
+                System.out.println("生成失败，可能是算式的生成空间已经消耗完，请尝试减少题目数量");
+            }
         }
     }
 }
