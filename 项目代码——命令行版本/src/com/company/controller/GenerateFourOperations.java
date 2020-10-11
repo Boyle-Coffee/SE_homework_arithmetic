@@ -31,7 +31,7 @@ public class GenerateFourOperations {
 
     public void generateFourOperations(Integer questionNum, Integer naturalNumberMax,
                                        List<String> questionList, List<String> answerList, Set<String> reversePolandSet) {
-        for (int i = 0; i < questionNum; i++) {
+        while (answerList.size() < questionNum) {
             generateQuesAndAnswerAndReverse(naturalNumberMax);
             while ("<0".equals(answer) || "÷0".equals(answer) || reversePoland == null) {
                 generateQuesAndAnswerAndReverse(naturalNumberMax);
