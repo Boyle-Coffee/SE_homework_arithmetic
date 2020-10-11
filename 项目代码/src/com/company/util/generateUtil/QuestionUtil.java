@@ -29,11 +29,13 @@ public class QuestionUtil {
      *
      * @return 返回随机分数
      */
-    public String generateRandFraction() {
+    public String generateRandFraction(Integer naturalNumberMax) {
         Random random = new Random();
-        // 暂定分子分母的最大值——可通过参数方式改变
-        int numerator = random.nextInt(50);
-        int denominator = random.nextInt(50) + 2;
+        int numerator = random.nextInt(naturalNumberMax);
+        int denominator = random.nextInt(naturalNumberMax);
+        if (denominator == 0) {
+            denominator += 2;
+        }
         if (numerator > 0) {
             int gcd = getGreatestCommonDivisor(numerator, denominator);
             numerator = numerator / gcd;

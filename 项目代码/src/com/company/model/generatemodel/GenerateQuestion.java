@@ -74,7 +74,7 @@ public class GenerateQuestion {
             case 1:
                 return questionUtil.generateRandInt(naturalNumberMax);
             case 2:
-                return questionUtil.generateRandFraction();
+                return questionUtil.generateRandFraction(naturalNumberMax);
             default:
                 return "";
         }
