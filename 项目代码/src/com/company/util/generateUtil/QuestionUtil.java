@@ -36,6 +36,9 @@ public class QuestionUtil {
         if (denominator == 0) {
             denominator += 2;
         }
+        if (numerator == 0) {
+            return numerator + "";
+        }
         if (numerator > 0) {
             int gcd = getGreatestCommonDivisor(numerator, denominator);
             numerator = numerator / gcd;
