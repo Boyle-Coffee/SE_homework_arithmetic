@@ -174,7 +174,7 @@ public class QuestionUtil {
      * @param question 题目
      * @return 返回存有题目的List
      */
-    public List<String> saveQuestion(String question) {
+    private List<String> saveQuestion(String question) {
         int j = 0;
         List<String> list = new ArrayList<>();
         List<Integer> signList = saveSignNum(question);
@@ -197,7 +197,7 @@ public class QuestionUtil {
      * @param questionList 存有题目的List
      * @return 返回List中的题目内容
      */
-    public String outputQuestion(List<String> questionList) {
+    private String outputQuestion(List<String> questionList) {
         StringBuilder question = new StringBuilder();
         for (String list : questionList) {
             question.append(list);
@@ -223,6 +223,9 @@ public class QuestionUtil {
         }
         int numerator = Integer.valueOf(question.substring(0, j));
         int denominator = Integer.valueOf(question.substring(j + 1));
+        if (denominator == 1) {
+            return numerator + "";
+        }
         if (numerator > denominator) {
             int num = numerator / denominator;
             return num + "" + "'" + (numerator - denominator * num) + "" + "/" + denominator + "";
