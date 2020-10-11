@@ -13,7 +13,7 @@ public class CalculateRPNTest {
     private static CalculateMdlService test = new CalculateMdlServiceImpl();
 
     public static void main(String[] args) {
-        String exper = "68 + 61";
+        String exper = "2 - 0/1 ÷ 0";
         for(int i=0; i <=10; i++) {
             String res = test.generateReversePoland(exper);
             System.out.println(i);
