@@ -34,4 +34,24 @@ public class WriteToFile {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 将成绩输出至文件
+     *
+     * @param fileName 文件名
+     * @param textList 文本集合
+     */
+    public void gradeToFile(String fileName, List<String> textList) {
+        File file = new File(fileName);
+        try {
+            FileWriter fileWriter = new FileWriter(file, true);
+            for (int i = 0; i < textList.size(); i++) {
+                fileWriter.write(textList.get(i));
+                fileWriter.write("\r\n");
+            }
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -1,6 +1,7 @@
 package com.company.service.impl;
 
 import com.company.model.checkmodel.CheckReversePoland;
+import com.company.model.checkmodel.CheckExerciseAnswer;
 import com.company.service.CheckMdlService;
 
 import java.util.List;
@@ -16,6 +17,8 @@ public class CheckMdlServiceImpl implements CheckMdlService {
 
     private CheckReversePoland checkReversePoland = new CheckReversePoland();
 
+    private CheckExerciseAnswer checkExerciseAnswer = new CheckExerciseAnswer();
+
     @Override
     public boolean isErrorReversePoland(String reversePoland, Set<String> set) {
         return checkReversePoland.checkReversePoland(reversePoland, set);
@@ -23,6 +26,6 @@ public class CheckMdlServiceImpl implements CheckMdlService {
 
     @Override
     public List<String> checkAnswer(List<String> myAnswerList, List<String> trueAnswerList) {
-        return checkReversePoland.checkAnswer(myAnswerList, trueAnswerList);
+        return checkExerciseAnswer.checkAnswer(myAnswerList, trueAnswerList);
     }
 }

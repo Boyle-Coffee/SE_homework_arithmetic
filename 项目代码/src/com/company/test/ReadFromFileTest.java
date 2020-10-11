@@ -17,7 +17,7 @@ public class ReadFromFileTest {
     private static FileMdlService fileMdlService = new FileMdlServiceImpl();
 
     public static void main(String[] args) {
-        testMethod("F://testFile.txt");
+        testMethod("Answers.txt");
     }
 
     private static void testMethod(String fileName) {

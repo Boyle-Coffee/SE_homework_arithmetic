@@ -25,4 +25,12 @@ public interface FileMdlService {
      * @return 返回文本集合
      */
     public List<String> readFromFile(String fileName);
+
+    /**
+     * 将成绩输出至文件
+     *
+     * @param fileName 文件名
+     * @param textList 文本集合
+     */
+    public void gradeToFile(String fileName, List<String> textList);
 }

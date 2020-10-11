@@ -27,4 +27,9 @@ public class FileMdlServiceImpl implements FileMdlService {
     public List<String> readFromFile(String fileName) {
         return readFromFile.readFromFile(fileName);
     }
+
+    @Override
+    public void gradeToFile(String fileName, List<String> textList) {
+        writeToFile.gradeToFile(fileName, textList);
+    }
 }
