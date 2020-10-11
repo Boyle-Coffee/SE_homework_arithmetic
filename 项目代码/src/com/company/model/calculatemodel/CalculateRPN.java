@@ -116,7 +116,7 @@ public class CalculateRPN {
                     result = new FractionObj(fig1).sub(new FractionObj(fig2));
                     if (result.DenominatorZero()) {
                         resultStr = Constants.DIVZERO;
-                    } else if (result.LTzero()) {
+                    } else if (result.LTZero()) {
                         resultStr = Constants.NEGATIVE;
                     } else {
                         resultStr = result.getString();
