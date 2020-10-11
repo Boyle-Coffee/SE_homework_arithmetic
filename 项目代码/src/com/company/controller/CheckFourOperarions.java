@@ -33,6 +33,9 @@ public class CheckFourOperarions {
             trueAnswerList = new ArrayList<String>();
             myAnswerList = fileMdlService.readFromFile(answerFileName);
             exerciseList = fileMdlService.readFromFile(exerciseFileName);
+            if (myAnswerList==null || exerciseList==null) {
+                return false;
+            }
             exerciseToAnswer();
             checkResult = checkMdlService.checkAnswer(myAnswerList, trueAnswerList);
             if (checkResult == null) {

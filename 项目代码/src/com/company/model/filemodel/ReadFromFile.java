@@ -39,7 +39,7 @@ public class ReadFromFile {
             bufr.close();
             fis.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            return null;
         }
         return textList;
     }

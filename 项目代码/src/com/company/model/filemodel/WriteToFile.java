@@ -23,7 +23,7 @@ public class WriteToFile {
     public void writeToFile(String fileName, List<String> textList) {
         File file = new File(fileName);
         try {
-            FileWriter fileWriter = new FileWriter(file, true);
+            FileWriter fileWriter = new FileWriter(file, false);
             for (int i = 0; i < textList.size(); i++) {
                 fileWriter.write(i + 1 + ".");
                 fileWriter.write(textList.get(i));
@@ -31,7 +31,8 @@ public class WriteToFile {
             }
             fileWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("写入文件时出现错误，可能是写入文件异常");
+            System.exit(0);
         }
     }
 
@@ -41,17 +42,18 @@ public class WriteToFile {
      * @param fileName 文件名
      * @param textList 文本集合
      */
-    public void gradeToFile(String fileName, List<String> textList) {
+    public boolean gradeToFile(String fileName, List<String> textList) {
         File file = new File(fileName);
         try {
-            FileWriter fileWriter = new FileWriter(file, true);
+            FileWriter fileWriter = new FileWriter(file, false);
             for (int i = 0; i < textList.size(); i++) {
                 fileWriter.write(textList.get(i));
                 fileWriter.write("\r\n");
             }
             fileWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            return false;
         }
+        return true;
     }
 }
