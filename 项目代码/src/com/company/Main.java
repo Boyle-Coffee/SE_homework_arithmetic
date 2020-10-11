@@ -16,21 +16,21 @@ public class Main {
         int questionNum = 100;
         String questionFileName = null;
         String answerFileName = null;
-        boolean flag = true;
+        boolean flag = false;
         for (int i = 0; i < args.length; i++) {
             if ("-r".equals(args[i])) {
                 naturalNumberMax = Integer.valueOf(args[i + 1]);
-                flag = false;
             }
             if ("-n".equals(args[i])) {
                 questionNum = Integer.valueOf(args[i + 1]);
-                flag = false;
             }
             if ("-e".equals(args[i])) {
                 questionFileName = args[i + 1];
+                flag = true;
             }
             if ("-a".equals(args[i])) {
                 answerFileName = args[i + 1];
+                flag = true;
             }
         }
         if (flag) {
