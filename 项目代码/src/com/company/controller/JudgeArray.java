@@ -13,7 +13,10 @@ import java.util.Map;
  * @create: 2020-10-11 13:48
  **/
 public class JudgeArray {
+
     public boolean isArrayError(String args[]) {
+
+        int fileFlag = 0;
         Map<String, String> map = new HashMap<String, String>();
         if (args.length == 0) {
             return false;
@@ -40,17 +43,22 @@ public class JudgeArray {
             }
             if ("-e".equals(key)) {
                 boolean matches = map.get(key).matches("[0-9]+");
+                fileFlag++;
                 if (matches) {
                     return true;
                 }
             }
             if ("-a".equals(key)) {
                 boolean matches = map.get(key).matches("[0-9]+");
+                fileFlag++;
                 if (matches) {
                     return true;
                 }
             }
         }
-        return true;
+        if ((fileFlag & 1) != 0) {
+            return true;
+        }
+        return false;
     }
 }

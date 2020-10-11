@@ -1,5 +1,7 @@
 package com.company.test;
 
+import com.company.controller.JudgeArray;
+
 /**
  * @program: 项目代码
  * @description:
@@ -7,8 +9,10 @@ package com.company.test;
  * @create: 2020-10-11 13:50
  **/
 public class ArrayTest {
+    static JudgeArray judgeArray = new JudgeArray();
+
     public static void main(String[] args) {
-        boolean flag = args[1].matches("[0-9]+");
+        boolean flag = judgeArray.isArrayError(args);
         System.out.println(flag);
     }
 }
