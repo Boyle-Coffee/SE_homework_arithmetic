@@ -7,15 +7,15 @@ import com.company.util.calculateUtil.FractionObj;
 import java.util.Stack;
 
 public class CalculateRPN {
-
+    /**
+     *@Description: 进行加法、乘法交换，确保等价的算式后缀表达式相同
+     *@Param: [resultStack]
+     *@return: java.lang.String
+     *@Author: Boyle
+     *@date: 2020/10/9
+     */
     private String stack2RPN(Stack<String> resultStack) {
-        /**
-         *@Description: 进行加法、乘法交换，确保等价的算式后缀表达式相同
-         *@Param: [resultStack]
-         *@return: java.lang.String
-         *@Author: Boyle
-         *@date: 2020/10/9
-         */
+
         Stack<String> tempStack = new Stack<>();
         String childExper1, childExper2, tempExper;
 

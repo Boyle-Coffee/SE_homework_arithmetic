@@ -33,7 +33,7 @@ public class GenerateFourOperations {
                                        List<String> questionList, List<String> answerList, Set<String> reversePolandSet) {
         for (int i = 0; i < questionNum; i++) {
             generateQuesAndAnswerAndReverse(naturalNumberMax);
-            while ("<0".equals(answer) || "÷0".equals(answer)) {
+            while ("<0".equals(answer) || "÷0".equals(answer) || reversePoland == null) {
                 generateQuesAndAnswerAndReverse(naturalNumberMax);
             }
             boolean flag = checkMdlService.isErrorReversePoland(reversePoland, reversePolandSet);

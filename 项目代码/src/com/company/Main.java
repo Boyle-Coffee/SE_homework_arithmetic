@@ -3,6 +3,7 @@ package com.company;
 import java.util.*;
 
 import com.company.controller.GenerateFourOperations;
+import com.company.execption.ArrayExecption;
 
 public class Main {
 
@@ -16,24 +17,35 @@ public class Main {
         int questionNum = 100;
         String questionFileName = null;
         String answerFileName = null;
+        boolean fileFlag = false;
         boolean flag = false;
+        if (args.length == 0) {
+            flag = true;
+        }
         for (int i = 0; i < args.length; i++) {
             if ("-r".equals(args[i])) {
                 naturalNumberMax = Integer.valueOf(args[i + 1]);
+                flag = true;
             }
             if ("-n".equals(args[i])) {
                 questionNum = Integer.valueOf(args[i + 1]);
+                flag = true;
             }
             if ("-e".equals(args[i])) {
                 questionFileName = args[i + 1];
                 flag = true;
+                fileFlag = true;
             }
             if ("-a".equals(args[i])) {
                 answerFileName = args[i + 1];
                 flag = true;
+                fileFlag = true;
             }
         }
         if (flag) {
+            throw new ArrayExecption("参数异常");
+        }
+        if (fileFlag) {
             // todo 需求九
             System.out.println("需求九");
         } else {
