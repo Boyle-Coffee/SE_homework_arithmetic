@@ -64,15 +64,15 @@ public class FractionObj {
     }
 
     private void setNumeratorAndDenominator(int a, int b) {
-        if (a==0) {
-            numerator = 0;
-            denominator = 1;
+        if (b==0) {
+            numerator = a;
+            denominator = 0;
         } else if (b==1) {
             numerator = a;
             denominator = b;
-        } else if (b==0){
-            numerator = a;
-            denominator = 0;
+        } else if (a==0){
+            numerator = 0;
+            denominator = 1;
         } else {
             int c = getGreatestCommonDivisor(Math.abs(a), Math.abs(b));
             numerator = a / c;
@@ -84,8 +84,15 @@ public class FractionObj {
         }
     }
 
-    public boolean LTzero() {
+    public boolean LTZero() {
         if ((numerator<0 && denominator>0) || (numerator>0 && denominator<0)) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean EqlZero() {
+        if(numerator==0) {
             return true;
         }
         return false;
@@ -110,7 +117,7 @@ public class FractionObj {
         String a, b, c;
         int temp, denominator, numerator;
         String sign;
-        if (this.LTzero()) {
+        if (this.LTZero()) {
             denominator = Math.abs(this.denominator);
             numerator = Math.abs(this.numerator);
             sign = "-";

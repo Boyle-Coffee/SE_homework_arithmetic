@@ -1,5 +1,6 @@
 package com.company.service;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -11,4 +12,6 @@ import java.util.Set;
 public interface CheckMdlService {
 
     public boolean isErrorReversePoland(String reversePoland, Set<String> set);
+
+    public List<String> checkAnswer(List<String> myAnswerList, List<String> trueAnswerList);
 }

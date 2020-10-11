@@ -3,6 +3,7 @@ package com.company.service.impl;
 import com.company.model.checkmodel.CheckReversePoland;
 import com.company.service.CheckMdlService;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -18,5 +19,10 @@ public class CheckMdlServiceImpl implements CheckMdlService {
     @Override
     public boolean isErrorReversePoland(String reversePoland, Set<String> set) {
         return checkReversePoland.checkReversePoland(reversePoland, set);
+    }
+
+    @Override
+    public List<String> checkAnswer(List<String> myAnswerList, List<String> trueAnswerList) {
+        return checkReversePoland.checkAnswer(myAnswerList, trueAnswerList);
     }
 }
