@@ -1,12 +1,18 @@
 package com.company;
 
-import java.util.*;
-
-import com.company.controller.GenerateFourOperations;
 import com.company.controller.CheckFourOperarions;
+import com.company.controller.GenerateFourOperations;
 import com.company.controller.JudgeArray;
+import org.junit.jupiter.api.Test;
 
-public class Main {
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class MyappTest {
 
     private static GenerateFourOperations generateFourOperations = new GenerateFourOperations();
     private static CheckFourOperarions checkFourOperarions = new CheckFourOperarions();
@@ -15,13 +21,16 @@ public class Main {
     private static List<String> answerList = new ArrayList<>();
     private static Set<String> reversePolandSet = new LinkedHashSet<>();
 
-    public static void main(String[] args) {
+    @Test
+    void main() {
+        long startTime = System.currentTimeMillis();
         int naturalNumberMax = 100;
         int questionNum = 100;
         String exerciseFileName = null;
         String answerFileName = null;
         boolean fileFlag = false;
         boolean flag;
+        String[] args = {"-r", "10", "-n", "10000"};
         flag = judgeArray.isArrayError(args);
         if (flag) {
             System.out.println("参数异常");
@@ -57,5 +66,7 @@ public class Main {
                 System.out.println("生成失败，可能是算式的生成空间已经消耗完，请尝试减少题目数量");
             }
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间为： "+(endTime-startTime)+"ms");
     }
 }
