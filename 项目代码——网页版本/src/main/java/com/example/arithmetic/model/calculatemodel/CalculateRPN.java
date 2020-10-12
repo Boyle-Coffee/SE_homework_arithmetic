@@ -1,8 +1,9 @@
-package com.company.model.calculatemodel;
+package com.example.arithmetic.model.calculatemodel;
 
-import com.company.common.Constants;
-import com.company.util.calculateUtil.DigitStringUtil;
-import com.company.util.calculateUtil.FractionObj;
+
+import com.example.arithmetic.common.Constants;
+import com.example.arithmetic.util.calculateUtil.DigitStringUtil;
+import com.example.arithmetic.util.calculateUtil.FractionObj;
 
 import java.util.Stack;
 
@@ -101,7 +102,7 @@ public class CalculateRPN {
         }
     }
 
-    private String operation(String fig1, String fig2, String opt) {
+    public String operation(String fig1, String fig2, String opt) {
         try {
             FractionObj result;
             String resultStr;

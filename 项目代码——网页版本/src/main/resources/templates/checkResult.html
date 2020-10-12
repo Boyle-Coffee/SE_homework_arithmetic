@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div style="display:flex;justify-content:center;">
+    <!--/*@thymesVar id="checkResult" type="ch"*/-->
+    <div style="display:inline-block; width:20%">
+        <h1>检查结果</h1>
+        <p th:each="u : ${checkResult}">
+            <a th:text="${u}"></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
