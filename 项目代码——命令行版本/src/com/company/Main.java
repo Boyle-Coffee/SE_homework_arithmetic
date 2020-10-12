@@ -50,7 +50,7 @@ public class Main {
                 System.out.println("检查出错，这可能是读取的文件异常或不存在导致，请检查你的参数");
             }
         } else {
-            if (generateFourOperations.generateFourOperations(questionNum, naturalNumberMax,
+            if (naturalNumberMax >=2 && generateFourOperations.generateFourOperations(questionNum, naturalNumberMax,
                     questionList, answerList, reversePolandSet)) {
                 System.out.println("生成成功，结果已经输出到Exercises.txt和Answers.txt");
             } else {
