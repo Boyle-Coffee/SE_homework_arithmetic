@@ -3,6 +3,7 @@ package com.example.arithmetic.service.impl;
 
 import com.example.arithmetic.model.calculatemodel.CalculateRPN;
 import com.example.arithmetic.service.CalculateMdlService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @program: 项目代码

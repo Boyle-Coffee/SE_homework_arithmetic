@@ -1,11 +1,14 @@
 package com.example.arithmetic.service;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @program: 项目代码
  * @description: 计算模块接口
  * @author: Boyle
  * @create: 2020-10-09 20:06
  **/
+
 public interface CalculateMdlService {
 
     // 生成逆波兰式
