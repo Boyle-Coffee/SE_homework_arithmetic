@@ -27,4 +27,10 @@ public class WebController {
         return "check";
     }
 
+    @GetMapping("/index")
+    public String index() {
+        return "index";
+    }
+
+
 }
